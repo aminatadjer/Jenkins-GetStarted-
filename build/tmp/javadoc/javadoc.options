@@ -1,9 +1,0 @@
--classpath 'C:\\Users\\BOS\\Desktop\\sil2\\outils\\Gradle-TP\\build\\classes\\java\\main;C:\\Users\\BOS\\Desktop\\sil2\\outils\\Gradle-TP\\build\\resources\\main'
--d 'C:\\Users\\BOS\\Desktop\\sil2\\outils\\Gradle-TP\\build\\docs\\javadoc'
--doctitle 'Gradle-TP 1.0-SNAPSHOT API'
--notimestamp 
--quiet 
--windowtitle 'Gradle-TP 1.0-SNAPSHOT API'
-'C:\\Users\\BOS\\Desktop\\sil2\\outils\\Gradle-TP\\src\\main\\java\\com\\example\\exception\\NoSquareException.java'
-'C:\\Users\\BOS\\Desktop\\sil2\\outils\\Gradle-TP\\src\\main\\java\\com\\example\\model\\Matrix.java'
-'C:\\Users\\BOS\\Desktop\\sil2\\outils\\Gradle-TP\\src\\main\\java\\com\\example\\service\\MatrixMathematics.java'
