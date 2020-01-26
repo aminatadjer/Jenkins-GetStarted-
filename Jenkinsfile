@@ -11,5 +11,11 @@ pipeline {
       }
     }
 
+    stage('Mail Notification') {
+      steps {
+        mail(subject: 'Build Notification', body: 'Hello', from: 'ga_tadjer@esi.dz', to: 'gn_fekir@esi.dz')
+      }
+    }
+
   }
 }
