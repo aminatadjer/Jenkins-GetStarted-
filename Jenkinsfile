@@ -61,7 +61,7 @@ pipeline {
 
     stage('slack ') {
       steps {
-        slackSend(baseUrl: 'https://hooks.slack.com/services/', teamDomain: 'outils-workspace', token: 'TRQ5TN6LD/BSSUG0EF5/uponZCgrBFTsIOxliwZUTuuY', message: 'deployé')
+        slackSend(baseUrl: 'https://hooks.slack.com/services/', teamDomain: 'outils-workspace', token: 'TRQ5TN6LD/BSSUG0EF5/uponZCgrBFTsIOxliwZUTuuY', message: 'deployÃ©', channel: 'general')
       }
     }
 
