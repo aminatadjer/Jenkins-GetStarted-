@@ -47,7 +47,7 @@ pipeline {
 
         stage('Test Reporting') {
           steps {
-            jacoco(execPattern: 'build/jacoco/*.exec', sourceExclusionPattern: 'com.test')
+            jacoco(execPattern: 'build/jacoco/*.exec', sourceExclusionPattern: 'src/test/*')
           }
         }
 
