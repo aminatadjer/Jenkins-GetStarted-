@@ -1,7 +1,7 @@
-package com.example.service;
+package com.service;
 
-import com.example.exception.NoSquareException;
-import com.example.model.Matrix;
+import com.exception.NoSquareException;
+import com.model.Matrix;
 
 public class MatrixMathematics {
 
@@ -9,11 +9,11 @@ public class MatrixMathematics {
 	 * This class a matrix utility class and cannot be instantiated.
 	 */
 	private MatrixMathematics(){}
-
-
+	
+	
 	/**
 	 * Determinant of a square matrix
-	 * The following function find the determinant in a recursively.
+	 * The following function find the determinant in a recursively. 
 	 * @param matrix
 	 * @return
 	 * @throws NoSquareException
@@ -24,7 +24,7 @@ public class MatrixMathematics {
 		if (matrix.size() == 1){
 			return matrix.getValueAt(0, 0);
 		}
-
+			
 		if (matrix.size()==2) {
 			return (matrix.getValueAt(0, 0) * matrix.getValueAt(1, 1)) - ( matrix.getValueAt(0, 1) * matrix.getValueAt(1, 0));
 		}
@@ -58,8 +58,8 @@ public class MatrixMathematics {
 		for (int i=0;i<matrix.getNrows();i++) {
 			if (i==excluding_row)
 				continue;
-			r++;
-			int c = -1;
+				r++;
+				int c = -1;
 			for (int j=0;j<matrix.getNcols();j++) {
 				if (j==excluding_col)
 					continue;
@@ -68,7 +68,7 @@ public class MatrixMathematics {
 		}
 		return mat;
 	}
-
+	
 	/**
 	 * The cofactor of a matrix
 	 * @param matrix
@@ -82,7 +82,7 @@ public class MatrixMathematics {
 				mat.setValueAt(i, j, changeSign(i) * changeSign(j) * determinant(createSubMatrix(matrix, i, j)));
 			}
 		}
-
+		
 		return mat;
 	}
 	public static Matrix transpose(Matrix matrix) {
@@ -95,4 +95,7 @@ public class MatrixMathematics {
 		return transposedMatrix;
 	}
 
+	public static Matrix inverse(Matrix matrix) throws NoSquareException {
+		return (transpose(cofactor(matrix)).multiplyByConstant(1.0/determinant(matrix)));
+	}
 }
