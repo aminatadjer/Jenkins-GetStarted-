@@ -1,0 +1,61 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.my-project",
+    "module": "Gradle-TP",
+    "version": "0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.0.1",
+      "buildId": "v6z3p2dc6fglhomv5n5spn5qga"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "Gradle-TP-0.1-SNAPSHOT.jar",
+          "url": "Gradle-TP-0.1-SNAPSHOT.jar",
+          "size": 3703,
+          "sha512": "2b29931ce173f1f3ff3707eb406d41f59a48097c3571f3687dd129e7f6f6a8f822e812d9a00a0dc4fb0e187eb0906e1ae5cb6f14065f66e2fa299cd4ec3f2ca7",
+          "sha256": "a05778bbdea7b8e8c10d44c5d5f7c538083b3dea57ac9e8c0872c234e830ab31",
+          "sha1": "bcbb2421343a9635d8f6fa0833a1bd2887e645be",
+          "md5": "6858193aa6c4938fdb396f143914f81c"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "Gradle-TP-0.1-SNAPSHOT.jar",
+          "url": "Gradle-TP-0.1-SNAPSHOT.jar",
+          "size": 3703,
+          "sha512": "2b29931ce173f1f3ff3707eb406d41f59a48097c3571f3687dd129e7f6f6a8f822e812d9a00a0dc4fb0e187eb0906e1ae5cb6f14065f66e2fa299cd4ec3f2ca7",
+          "sha256": "a05778bbdea7b8e8c10d44c5d5f7c538083b3dea57ac9e8c0872c234e830ab31",
+          "sha1": "bcbb2421343a9635d8f6fa0833a1bd2887e645be",
+          "md5": "6858193aa6c4938fdb396f143914f81c"
+        }
+      ]
+    }
+  ]
+}

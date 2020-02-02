@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.my-project</groupId>
+  <artifactId>Gradle-TP</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20200126.103148</timestamp>
+      <buildNumber>7</buildNumber>
+    </snapshot>
+    <lastUpdated>20200126103148</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.1-20200126.103148-7</value>
+        <updated>20200126103148</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.1-20200126.103148-7</value>
+        <updated>20200126103148</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>0.1-20200126.103148-7</value>
+        <updated>20200126103148</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

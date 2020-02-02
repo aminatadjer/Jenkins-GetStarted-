@@ -1,4 +1,4 @@
-package com.example.model;
+package com.model;
 
 public class Matrix {
 
@@ -21,7 +21,9 @@ public class Matrix {
 	public int getNrows() {
 		return nrows;
 	}
-
+	public int getNrowss() {
+		return nrows;
+	}
 	public void setNrows(int nrows) {
 		this.nrows = nrows;
 	}
