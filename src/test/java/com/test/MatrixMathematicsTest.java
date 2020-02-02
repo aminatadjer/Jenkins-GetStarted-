@@ -14,6 +14,7 @@ public class MatrixMathematicsTest
 	@Test
 	public final void testTranspose() 
 	{
+		int i=0;
 		double [][] data ={{1,2},{3,4},{5,6}};
 		double [][] Tdata ={{1,3,5},{2,4,6}};
 		Matrix mat=new Matrix(data); 
