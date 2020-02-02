@@ -22,20 +22,9 @@ public class MatrixMathematicsTest
 		
 	}
 
-/*	@Test
-	public final void testInverse() 
-	{ 
-		double [][] data ={{1,2},{3,4}};
-		Matrix mat=new Matrix(data); 
-		double [][] Idata ={{-2,1},{1.5,-0.5}};
-		
-		try{
-			assertArrayEquals(MatrixMathematics.inverse(mat).getValues(),Idata);
-			} catch ( NoSquareException e ){System.out.print("");
-			}
-		
-		
-	}*/
+
+	}
+
 
 	@Test
 	public final void testDeterminantCarre()
@@ -77,7 +66,17 @@ public class MatrixMathematicsTest
 			}
 
 	}
-	
+
+	@Test (expected = NoSquareException.class )
+	public final void testException() throws NoSquareException
+	{
+		double [][] data ={{1,2},{3,4},{5,6}};
+		Matrix mat=new Matrix(data); 
+		
+			Matrix matI=MatrixMathematics.inverse(mat);
+			
+		
+	}
 
 	
 
