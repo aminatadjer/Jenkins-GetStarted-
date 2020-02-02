@@ -55,12 +55,18 @@ pipeline {
     }
 
     stage('Deployment') {
+       when {
+            branch "master"
+        }
       steps {
         bat 'gradle publish'
       }
     }
 
     stage('slack ') {
+       when {
+            branch "master"
+        }
       steps {
         slackSend(baseUrl: 'https://hooks.slack.com/services/', teamDomain: 'outils-workspace', token: 'TRQ5TN6LD/BSSUG0EF5/3OyM02whwrisz384YnM9T5ey', message: 'deployee', channel: 'general')
       }
